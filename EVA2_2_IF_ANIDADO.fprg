@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-09 07:22:17 p. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCMDIwMjA5OzIwMjMtMTAtMDk7MDc6MTA6NTkgcC4gbS47Mjg0MQ=="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCMDIwMjA5OzIwMjMtMTAtMDk7MDc6MjI6MTcgcC4gbS47MTsyOTQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="val1" type="Integer" array="False" size=""/>
+            <declare name="val2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce valor 1&quot;" newline="True"/>
+            <input variable="val1"/>
+            <output expression="&quot;Introduce valor 2&quot;" newline="True"/>
+            <input variable="val2"/>
+            <if expression="val1 &gt; val2">
+                <then>
+                    <output expression="&quot;El valor mas grande es &quot;" newline="True"/>
+                    <output expression="val2" newline="False"/>
+                </then>
+                <else>
+                    <if expression="val1 = val2">
+                        <then>
+                            <output expression="val1" newline="True"/>
+                            <output expression="&quot; es igual que &quot;" newline="False"/>
+                            <output expression="val2" newline="False"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El valor mas peque&#241;o es &quot;" newline="True"/>
+                            <output expression="val1" newline="False"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
